@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import s from "./Searchbar.module.css";
 
@@ -26,3 +27,9 @@ const Searchbar = ({ searchQuery, handleInputChange, handleSubmitForm }) => {
 };
 
 export default Searchbar;
+
+Searchbar.propTypes = {
+  searchQuery: PropTypes.string,
+  handleInputChange: PropTypes.func,
+  handleSubmitForm: PropTypes.func,
+};

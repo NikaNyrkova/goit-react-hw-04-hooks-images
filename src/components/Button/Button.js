@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import s from "./Button.module.css";
 
@@ -11,3 +12,7 @@ const Button = ({ handleClickLoadMore }) => {
 };
 
 export default Button;
+
+Button.propTypes = {
+  handleClickLoadMore: PropTypes.func,
+};

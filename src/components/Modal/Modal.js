@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 
 import s from "./Modal.module.css";
 
@@ -23,3 +24,9 @@ const Modal = ({ handleCloseModal, modalImg, modalAlt }) => {
 };
 
 export default Modal;
+
+Modal.propTypes = {
+  handleCloseModal: PropTypes.func,
+  modalImg: PropTypes.string,
+  modalAlt: PropTypes.string,
+};
